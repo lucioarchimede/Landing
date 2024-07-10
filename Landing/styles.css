@@ -1,0 +1,267 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(248, 248, 248);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Header */
+
+.header {
+    background-color: rgb(0, 0, 0);
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo-header {
+    font-size: 19px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif Times, serif, sans-serif;
+    color: #fff;
+    margin-left: 10px; 
+}
+
+
+.logo img {
+    width: 50px; /* Tamaño del logo */
+    height: auto; /* Ajuste automático de la altura según el ancho */
+    margin-right: 10px; /* Ajusta el margen derecho del logo */
+    
+}
+/* Título Principal */
+.main-title {
+    text-align: end;
+    margin: 20px 0; /* Reduce el margen para acercar el título al video */
+}
+
+.main-title h1 {
+    font-weight: 700;
+    line-height: 1.4em;
+    font-size: 35px;
+    text-transform: none;
+    color: hsla(234.29, 0%, 0%, 1);
+    font-family: var(--font-primary);
+}
+
+/* Video */
+.video-section {
+    background-color: #f5f5f5; /* Light grey background */
+    padding: 20px 0; /* Añade algo de padding */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.video-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width of the container */
+    margin: 0 auto; /* Center align the container */
+}
+
+.video-section video {
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Reduce el ancho máximo del video */
+    max-height: 340px; /* Ajuste la altura máxima */
+    border: 5px solid #ccc; /* Border around the video */
+    border-radius: 10px; /* Rounded corners for the video */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Light shadow */
+}
+
+
+/* Botón Clickeable */
+
+
+.button {
+    padding: 25px 50px;
+    text-decoration: none;
+    border-radius: 50px; 
+    font-size: 1.5em;
+    outline: 0;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background-color: hsla(.39, 100%, 30.2%, 1);
+}
+
+
+
+/* Segundo Título */
+.secondary-title {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.secondary-title h2 {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-family: var(--font-primary);
+}
+
+
+
+/* Estilos para la sección de transformaciones */
+.transformacionesUno {
+    background-color: #cfcfcf;
+    padding: 40px 20px;
+    border-radius: 10px;
+    
+}
+.transformacionesDos {
+    background-color: #202020;
+    padding: 30px; /* Aumento del padding para más espacio alrededor del contenido */
+    border-radius: 10px;
+    text-align: center; /* Centra el contenido horizontalmente */
+    color: #ffffff; /* Color de texto blanco */
+    margin-bottom: 20px; /* Espacio adicional debajo de la sección */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra para un efecto de elevación */
+}
+
+
+.transformaciones .container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.transformaciones h3 {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.transformaciones p {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+
+/* Fotos */
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre los bloques */
+}
+
+.photo-pair {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px; /* Espacio entre las imágenes dentro del bloque */
+}
+
+.photo-pair img {
+    width: 150px; /* Haciendo las fotos más anchas */
+    height: auto;
+    border: 3px solid #643c00; /* Bordes llamativos */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra llamativa */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave para transformaciones y sombras */
+}
+
+.fotos:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el cursor */
+}
+
+/* Estilos adicionales para hacer el diseño más atractivo */
+.photo-pair img:hover {
+    border-color: #f44336; /* Cambia el color del borde al pasar el cursor */
+}
+
+.photo-gallery {
+    background: linear-gradient(135deg, #aaaaaa 0%, #cecece 100%);
+    padding: 40px 20px;
+    border-radius: 15px;
+}
+
+.photo-pair {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+  
+.container-dos {
+    display: flex;
+    justify-content: center;
+    gap: 70px; /* Espacio entre los cuadrantes */
+}
+
+
+
+.box {
+    background-color: rgb(248, 248, 248) ;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border-style: solid;
+}
+
+.highlight {
+    background-color: rgb(146, 35, 35); /* Fondo amarillo como resaltador */
+    padding: 5px; /* Ajuste del padding para el resaltador */
+    border-radius: 5px; /* Bordes redondeados para el resaltador */
+    font-style: italic
+}
+
+.highlightDos {
+    text-decoration:wavy;
+    background-color:  hsla(.39, 100%, 30.2%, 1);
+    color: white; 
+    border-radius: 10px;
+    font-size: larger;
+    padding: 5px;
+    
+}
+
+.tituloTres {
+    font-size: 1.8em; /* Tamaño de fuente más grande */
+    margin-bottom: 10px; /* Espacio inferior entre los títulos */
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
