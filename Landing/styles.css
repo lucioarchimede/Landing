@@ -49,10 +49,11 @@ body {
 .main-title h1 {
     font-weight: 700;
     line-height: 1.4em;
-    font-size: 35px;
+    font-size: 40px;
     text-transform: none;
-    color: hsla(234.29, 0%, 0%, 1);
-    font-family: var(--font-primary);
+    color:  hsla(.39, 100%, 30.2%, 1);
+   font-family: 'Raleway', sans-serif;
+    
 }
 
 /* Video */
@@ -147,6 +148,9 @@ body {
     font-size: 18px;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
+}
+.size{
+    font-size: 110%;
 }
 
 
